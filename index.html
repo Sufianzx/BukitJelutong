@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Group Project</title>
+<link rel = "stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('.send-button').addEventListener('click', function () {
+          // Get user inputs
+          const name = document.querySelector('.input-name').value;
+          const phoneNumber = document.querySelector('.input-phone').value;
+          const emailTitle = document.querySelector('.input-title').value;
+          const message = document.querySelector('.input-message').value;
+
+          // Create a pre-filled message
+          const preFilledMessage = `Name: ${name} Phone Number: ${phoneNumber} Email Title: ${emailTitle} Message: ${message}`;
+
+          // Generate WhatsApp URL
+          const whatsappUrl = `https://wa.me/60192122110?text=${encodeURIComponent(preFilledMessage)}`;
+
+          // Redirect to WhatsApp
+          window.location.href = whatsappUrl;
+      });
+  });
+</script>
+
+</head>
+<body>
+
+<nav>
+  <div class="logo">BUKIT JELUTONG</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li class="dropdown">
+      <a href="#services">Services</a>
+      <div class="dropdown-content">
+        <a href="#transportations">Transportations</a>
+        <a href="#businesses">Businesses</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="#contact">Contact Us</a>
+      <div class="dropdown-content">
+        <a href="mailto:ecocommunitypark@gmail.com" target="_blank">Email</a>
+        <a href="https://www.instagram.com/bukitjelutongecocommunity" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/BukitJelutongEcoCommunity/?locale=ms_MY" target="_blank">Facebook</a>
+        <a href="#contact">Message Us</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<section id="home">
+  <body>
+    <div class="detel">
+      <h1>Welcome to Bukit Jelutong</h1>
+      <p>Bukit Jelutong is an upscale suburb of Shah Alam, Selangor, Malaysia.
+        The suburb is a planned community, with an area of over 2,200
+        acres and developed by Guthrie Property Holding Berhad</p>
+      </div>
+          <div class="pic">
+            <img src="Gallery/pic.jpg" class="shape">
+        </div>
+  </body>
+</section>
+
+<section id="about">
+  <body>
+    <div class="heading">
+    <h1>About Us</h1> 
+      <section class="about">
+        <div class="about-image">
+          <img src="Gallery/bjwp.jpg">
+        </div>
+        <div class="secimg">
+          <img src="Gallery/bjs.jpeg.jpg">
+        </div>
+        <div class="about-content">
+        <p>The Bukit Jelutong community has proven to be a close community
+        judging from its regular events. The main yearly event is the Bukit Jelutong
+        Carnival held annually. The Carnival is organised by the Bukit Jelutong Residents
+        Association. Currently, most of the areas in Bukit Jelutong are gated and guarded
+        through supports from the community itself.</p>
+        <a href="Gallery/BUKIT JELUTONG COMMUNITY.pdf" target="_blank" download="read-more" class="read-more">Read More</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</section>
+
+<section id="events">
+  <div class="event-images-container">
+    <div class="event-image">
+      <img src="Gallery/Event1.jpg" alt="Event 1">
+      <div class="image-description-overlay">
+        <p>College students with their lecturers at Bukit Jelutong Eco Community Park</p>
+      </div>
+    </div>
+    <div class="event-image">
+      <img src="Gallery/Event2.jpg" alt="Event 2">
+      <div class="image-description-overlay">
+        <p>College students collaborated in a communal effort to clean the area around Bukit Jelutong Eco Community Park</p>
+      </div>
+    </div>
+    <div class="event-image">
+      <img src="Gallery/Event3.jpg" alt="Event 3">
+      <div class="image-description-overlay">
+        <p>Workers cleaning the area for feeding the ducklings at Bukit Jelutong Eco Community Park</p>
+      </div>
+    </div>
+    <div class="event-image">
+      <img src="Gallery/Event4.jpg" alt="Event 4">
+      <div class="image-description-overlay">
+        <p>Workers are cleaning the sitting area for visitors to observe the ducks</p>
+      </div>
+    </div>
+    <div class="event-image">
+      <img src="Gallery/Event5.jpg" alt="Event 5">
+      <div class="image-description-overlay">
+        <p>A group of women is visiting Bukit Jelutong Eco Community Park</p>
+      </div>
+    </div>
+    <div class="event-image">
+      <img src="Gallery/Event6.jpg" alt="Event 6">
+      <div class="image-description-overlay">
+        <p>A group of women is interacting affectionately with pet animals, namely goats, at Bukit Jelutong Eco Community Park</p>
+      </div>
+    </div>
+    <div class="event-image">
+      <img src="Gallery/Event7.jpg" alt="Event 7">
+      <div class="image-description-overlay">
+        <p>A group of preschool students along with their teachers is visiting Bukit Jelutong Eco Community Park</p>
+      </div>
+    </div>
+    <div class="event-image">
+      <img src="Gallery/Event8.jpg" alt="Event 8">
+      <div class="image-description-overlay">
+        <p>A delegation from the Veterinary Services Department is visiting Bukit Jelutong Eco Community Park</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="locations">
+ 
+  
+  <div class="location-container">
+    <div class="location-image">
+      <img src="Gallery/Location1.jpeg" alt="Location Image 1">
+      <div class="location-description">
+        <p><b>Masjid Tengku Ampuan Jemaah</b>, located in Bukit Jelutong, Shah Alam, Malaysia, stands as a majestic symbol of Islamic 
+          architecture and spiritual sanctuary. Named in honor of the late Tengku Ampuan Jemaah, the royal matriarch of Selangor, 
+          this mosque is renowned for its exquisite design and cultural significance.</p>
+          <button class="location-button" onclick="window.open('https://maps.app.goo.gl/UohLZeizUoraDGao6', '_blank')">Visit Location</button>
+      </div>
+    </div>
+
+    <div class="location-image">
+      <img src="Gallery/Location2.jpg" alt="Location Image 2">
+      <div class="location-description">
+        <p><b>Radia Bukit Jelutong</b> is a vibrant township nestled in the heart of Shah Alam, Malaysia. Boasting a harmonious blend of residential, 
+          commercial, and recreational spaces, Radia Bukit Jelutong offers a modern and convenient lifestyle to its residents. With lush 
+          greenery and well-planned infrastructure, the township provides a serene environmente.</p>
+          <button class="location-button" onclick="window.open('https://maps.app.goo.gl/gEzhiS8YDPwrSnjT9', '_blank')">Visit Location</button>
+      </div>
+    </div>
+
+    <div class="location-image">
+      <img src="Gallery/Location3.jpeg" alt="Location Image 3">
+      <div class="location-description">
+        <p><b>Bukit Jelutong Eco Community Park</b> is a green oasis situated within the bustling urban landscape of Shah Alam, Malaysia. 
+          It serves as a tranquil haven, seamlessly integrating nature with the surrounding community. The park's thoughtful design 
+          incorporates lush landscapes, recreational areas, and eco-friendly features.</p>
+          <button class="location-button" onclick="window.open('https://maps.app.goo.gl/6kb9fpNa6uoHaL228', '_blank')">Visit Location</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="services">
+  <div class="service-box">
+      <h3>Transportations</h3>
+      <img class="service-image" src="Gallery/Transport Main.jpg" alt="Transportation Image">
+      <p>Explore our comprehensive transportation services tailored to meet your needs. 
+      From reliable shuttle services to convenient private transportation, we ensure 
+      seamless connectivity for your journeys</p>
+      </br>
+      <button class="service-button" onclick="window.location.href='#transportations'">Learn More</button>
+  </div>
+
+  <div class="service-box">
+      <h3>Businesses</h3>
+      <img class="service-image" src="Gallery/Businesses Main.jpg" alt="Businesses Image">
+      <p>Discover the richness of our local community through our Local Business Directory. Showcasing 
+      a variety of homegrown businesses, from cozy cafes to innovative startups</p>
+      </br>
+      <button class="service-button" onclick="window.location.href='#businesses'">Learn More</button>
+  </div>
+</section>
+
+<section id="transportations">
+  <div class="transport-image">
+    <img src="Gallery/Transport1.jpg" alt="Transportation Image 1">
+  </div>
+  <div class="image-description">
+    <p>Car rental services for self-drive are available in and around Bukit Jelutong, attracting a steady clientele. 
+    Reservations, particularly for affordable options, are recommended. The rental fleet includes various models such 
+    as Perodua Axia, Myvi and Proton Saga FLX, with daily rates provided. Minimum rental periods apply for 
+    locations beyond the Lembah Kelang area to compliance with the Non-Abuse Policy.</p>
+    <button onclick="window.open('https://keretasewashahalams2.wordpress.com/kereta-sewa-bukit-jelutong/', '_blank')">Learn More</button>
+  </div>
+
+  <div class="transport-image">
+    <img src="Gallery/Transport2.jpg" alt="Transportation Image 2">
+  </div>
+  <div class="image-description">
+    <p>Navigating Bukit Jelutong is made easy with Rapid KL's SA05 bus line, 
+    stopping at key locations like Space U8 Shopping Mall, Balai Bomba & Penyelamat 
+    Kota Anggerik, and Radia Bukit Jelutong Sales Gallery. The closest station, 
+    D'Bayu Commercial Centre, is a short 14-minute walk away. Additional buses 
+    run at 5:46 PM and 6:06 PM. Perfect for commuters, the route covers essential 
+    spots such as schools and Plaza Jelutong, ensuring convenient access to various 
+    destinations in the area.</p>
+    <button onclick="window.open('https://moovitapp.com/index/en/public_transit-Bukit_Jelutong-Kuala_Lumpur-site_27558552-1082', '_blank')">Learn More</button>
+  </div>
+
+  <div class="transport-image">
+    <img src="Gallery/Transport3.jpg" alt="Transportation Image 3">
+  </div>
+  <div class="image-description">
+    <p>Embark on a seamless journey between Bukit Jelutong and KLIA with the dedicated 
+    service managed by Mr. Hafidz. Offering a range of luxurious car options, including 
+    VIP shuttles, this service ensures a comfortable and direct transfer to and from KLIA. 
+    With fares starting from RM100, the convenience extends to both pickup and booking 
+    options, making travel hassle-free for residents and visitors alike. Experience 
+    a premium travel experience with this exclusive shuttle service for a stress-free commute.</p>
+    <button onclick="window.open('https://wa.me/60128435325', '_blank')">Learn More</button>
+  </div>
+</section>
+
+<section id="businesses">
+  <div class="business-image">
+    <img src="Gallery/Businesses3.jpg" alt="Business Image 1">
+  </div>
+  <div class="image-description">
+    <p>Experience the rich tapestry of Malay traditional flavors at One Serambi Cafe, 
+    a culinary gem in Bukit Jelutong. Renowned for its specialization in authentic 
+    Malay dishes, complemented by a selection of Western favorites, the cafe is a 
+    delightful fusion of cultural cuisines. Open for breakfast and lunch, One Serambi 
+    Cafe offers a diverse menu, catering to various palates. </p>
+    <button onclick="window.location.href='https://oneserambi.com/'">Learn More</button>
+  </div>
+
+  <div class="business-image">
+    <img src="Gallery/Businesses2.jpeg" alt="Business Image 2">
+  </div>
+  <div class="image-description">
+    <p>Discover the modern culinary delights of The Komunal Cafe in Bukit Jelutong, 
+    a chic venue with an inviting aesthetic and spacious design. This trendy cafe is 
+    known for its delectable Western breakfast and brunch options, providing a 
+    perfect blend of style and substance.  
+    The Komunal Cafe offers a modern dining experience with a focus on 
+    quality and flavor, making it a must-visit destination for food 
+    enthusiasts in Bukit Jelutong.</p>
+    <button onclick="window.location.href='https://thekomunal.com/our-specialized-menu-bukit-jelutong/'">Learn More</button>
+  </div>
+
+  <div class="business-image">
+    <img src="Gallery/Businesses1.JPG" alt="Business Image 3">
+  </div>
+  <div class="image-description">
+    <p>Savor the rich flavors of meat at Polperro Steak House in Bukit Jelutong,
+    a haven for steak enthusiasts with a distinct Texas-style ambiance. This 
+    family-friendly establishment boasts a wide area reminiscent of a BBQ house.
+    Specializing in high-quality steaks, 
+    Polperro Steak House is the go-to destination for meat lovers seeking a taste 
+    of excellence. Beyond its delectable menu, the venue is perfect for family 
+    gatherings and special occasions, as it accommodates event bookings for birthdays and more</p>
+    <button onclick="window.location.href='https://polperrogroup.com/'">Learn More</button>
+  </div>
+</section>
+
+<section id="contact">
+<div class="contact-container">
+    <div class="contact-buttons">
+        <a href="mailto:ecocommunitypark@gmail.com" target="_blank" class="contact-button">
+            <img src="Gallery/Elogo.png" alt="Email" width="20" height="20"> Email
+        </a>
+        <a href="https://www.instagram.com/bukitjelutongecocommunity" target="_blank" class="contact-button">
+            <img src="Gallery/Ilogo.png" alt="Instagram" width="20" height="20"> Instagram
+        </a>
+        <a href="https://www.facebook.com/BukitJelutongEcoCommunity/?locale=ms_MY" target="_blank" class="contact-button">
+          <img src="Gallery/Flogo.png" alt="Facebook" width="20" height="20"> Facebook
+        </a>
+    </div>
+
+    <div class="contact-section">
+        <input type="text" placeholder="Your Name" class="input-box input-name">
+        <input type="tel" placeholder="Your Phone Number" class="input-box input-phone">
+        <input type="text" placeholder="Title" class="input-box input-title">
+        <textarea placeholder="Your Message" rows="5" class="input-box input-message"></textarea>
+        <button class="send-button">Send Message</button>
+    </div>
+
+</div>
+</section>
+
+</body>
+</html>
